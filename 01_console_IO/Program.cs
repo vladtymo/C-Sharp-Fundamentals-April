@@ -8,8 +8,9 @@
     block comment
 */
 
-// Ctrl + F5            - build and run application
-// Alt + Arrow Up/Dowm  - move line up/dowm
+// Ctrl + F5                         - build and run application
+// Alt + Arrow Up/Dowm               - move line up/dowm
+// Select Code Block -> Ctrl + K + F - formate selected code
 
 // ------------------ console output ------------------
 // invoke method syntax: className.MethodName(parameter1, parameter2...);
