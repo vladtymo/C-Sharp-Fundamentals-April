@@ -30,3 +30,35 @@ a = 10;
 // postfix form
 //int c = a++ * 2; // 20
 int c = ++a * 2;   // 22
+
+// ---------- logic: > < >= <= == != 
+
+a = 5;
+b = 2;
+
+// logic operator return: true / false (bool)
+
+Console.WriteLine($"A > B: {a > b}");
+Console.WriteLine($"A < B: {a < b}");
+Console.WriteLine($"A >= B: {a >= b}");
+Console.WriteLine($"A <= B: {a <= b}");
+Console.WriteLine($"A == B: {a == b}");
+Console.WriteLine($"A != B: {a != b}");
+
+if (a > b) 
+{
+    // do this if condition is TRUE
+    Console.WriteLine("A is bigger than B!");
+}
+
+// logic combination: && (and) || (or)
+
+Console.Write("Enter number: ");
+int number = int.Parse(Console.ReadLine());
+// check for range (10...50)
+
+Console.WriteLine($"In range (10...50): {number >= 10 && number <= 50}");
+Console.WriteLine($"Out of range (10...50): {number < 10 || number > 50}");
+
+// logic negative: !
+Console.WriteLine($"Negative of A > B: {!(a > b)}");
