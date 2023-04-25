@@ -52,3 +52,10 @@ Console.Write("Enter your birthdate year: ");
 int year = int.Parse(Console.ReadLine());
 
 Console.WriteLine($"You are {DateTime.Now.Year - year} years old...");
+
+//////////////////////////// HOMEWORK
+// Task 1
+Console.Write("Enter the square side length (cm): ");
+float side = float.Parse(Console.ReadLine());
+Console.WriteLine($"Square area: {side * side}cm^2");
+Console.WriteLine($"Square perimeter: {side * 4}cm");
