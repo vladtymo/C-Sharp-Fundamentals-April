@@ -29,9 +29,20 @@ for (int i = 0; i < marks.Length; i++)
 
 // show student's average mark
 int summ = 0;
-for (int i = 0; i < marks.Length; i++)
+//for (int i = 0; i < marks.Length; i++)
+//{
+//    summ += marks[i];
+//}
+foreach (int m in marks)
 {
-    summ += marks[i];
+    summ += m;
 }
 Console.WriteLine($"Average mark: {(float)summ / marks.Length}");
 
+// ---------- foreach (type name in collection) { ...code... }
+Console.Write("Marks: ");
+foreach(int m in marks)
+{
+    //m += 2; // cannot change the value
+    Console.Write($"{m} ");
+}
