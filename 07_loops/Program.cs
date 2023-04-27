@@ -1,6 +1,7 @@
 ﻿// ------------------------ Iteration Statements ------------------------
 // loops: while, do while, for
 
+// bad practice
 Console.WriteLine("Order 1: ");
 Console.WriteLine("Order 1: ");
 Console.WriteLine("Order 3: ");
