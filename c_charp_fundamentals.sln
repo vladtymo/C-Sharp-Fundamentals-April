@@ -5,13 +5,15 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_console_IO", "01_console_IO\01_console_IO.csproj", "{BE9F7DD3-AA55-44D4-92CA-149F2365FFAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_data_types", "02_data_types\02_data_types.csproj", "{3E04E7D7-B9DB-40A5-8946-63C9409A7D38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_data_types", "02_data_types\02_data_types.csproj", "{3E04E7D7-B9DB-40A5-8946-63C9409A7D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_operators", "03_operators\03_operators.csproj", "{8D8B3E2D-342B-4159-A673-668B5A341140}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_operators", "03_operators\03_operators.csproj", "{8D8B3E2D-342B-4159-A673-668B5A341140}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_enum", "04_enum\04_enum.csproj", "{3F8A64FE-6EFF-4568-898C-13A55CE347FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_enum", "04_enum\04_enum.csproj", "{3F8A64FE-6EFF-4568-898C-13A55CE347FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_structure", "05_structure\05_structure.csproj", "{CDBBBB0E-F09F-430B-8844-D16418151213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_structure", "05_structure\05_structure.csproj", "{CDBBBB0E-F09F-430B-8844-D16418151213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_selections", "06_selections\06_selections.csproj", "{6608C29E-07F2-4A41-88DE-FEA384B8A16F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CDBBBB0E-F09F-430B-8844-D16418151213}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDBBBB0E-F09F-430B-8844-D16418151213}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDBBBB0E-F09F-430B-8844-D16418151213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6608C29E-07F2-4A41-88DE-FEA384B8A16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6608C29E-07F2-4A41-88DE-FEA384B8A16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6608C29E-07F2-4A41-88DE-FEA384B8A16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6608C29E-07F2-4A41-88DE-FEA384B8A16F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
