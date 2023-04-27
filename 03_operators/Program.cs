@@ -62,3 +62,10 @@ Console.WriteLine($"Out of range (10...50): {number < 10 || number > 50}");
 
 // logic negative: !
 Console.WriteLine($"Negative of A > B: {!(a > b)}");
+
+// ---------- ternary operator: (condition ? value_if_true : value_if_false)
+
+Console.WriteLine($"Your number is: {(number > 0 ? "Positive" : (number < 0) ? "Negative" : "Zero")}");
+
+// avoid negitive values
+result = (number >= 0 ? number : 0);
