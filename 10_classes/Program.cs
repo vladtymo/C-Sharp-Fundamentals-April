@@ -110,6 +110,30 @@
         {
             return $"Conditioner: {model} {color}, Status: {Status}, T: {temperature}^C...  Serial: {serialNumber}";
         }
+
+        // ------------------- overload operators
+        // static method does not access to [this]
+        
+        // syntax: static return_type operator[symbol](parameters) { ... }
+        public static Conditioner operator++(Conditioner conditioner)
+        {
+            conditioner.Increase();
+            return conditioner;
+        }
+
+        public static bool operator >(Conditioner left, Conditioner right)
+        {
+            return left.Temperature > right.Temperature;
+        }
+        public static bool operator <(Conditioner left, Conditioner right)
+        {
+            return left.Temperature < right.Temperature;
+        }
+
+        public static explicit operator int(Conditioner conditioner)
+        {
+            return conditioner.Temperature;
+        }
     }
 
     internal class Program
@@ -143,6 +167,15 @@
             your.Decrease();
 
             Console.WriteLine(your);
+
+            // ------------------- Conditioner operators
+            Conditioner his = ++my;
+
+            if (my > your)
+                Console.WriteLine("My is bigger than your!");
+
+            int number = (int)my; // explicit only
+            Console.WriteLine($"Conditioner as a number: {number}");
         }
     }
 }
