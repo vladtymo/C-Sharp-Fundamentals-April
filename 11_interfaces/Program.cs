@@ -12,7 +12,12 @@ namespace _11_interfaces
     {
         // public by default
         float Speed { get; set; }
-        void Move();
+
+        // interface can has a default realizations
+        void Move()
+        {
+            Console.WriteLine($"Animal is moving with speed of {Speed}km/h...");
+        }
     }
 
     // interface inheritance: interface IA : IB
@@ -37,10 +42,7 @@ namespace _11_interfaces
         public float Speed { get; set; }
         public double Weight { get; set; }
 
-        public void Move()
-        {
-            Console.WriteLine("Tiger is moving...");
-        }
+        // Move() - has a default realization
 
         public void Run()
         {
@@ -74,6 +76,11 @@ namespace _11_interfaces
         public float FlyingHeight { get; set; }
         public double Weight { get; set; }
 
+        // custom Move() method realization
+        public void Move()
+        {
+            Console.WriteLine("Chicken is moving in a custom way...");
+        }
         public void Run()
         {
             Console.WriteLine($"Chicken is running with the speed of {Speed}km/h...");
@@ -81,11 +88,6 @@ namespace _11_interfaces
         public void Fly()
         {
             Console.WriteLine($"Chicken is flying up to the {FlyingHeight}m of height...");
-        }
-
-        public void Move()
-        {
-            Console.WriteLine("Chicken is moving...");
         }
     }
 
@@ -102,11 +104,6 @@ namespace _11_interfaces
         public void Jump()
         {
             Console.WriteLine($"Kangaroo can jump up to the {JumpingHeight}m...");
-        }
-
-        public void Move()
-        {
-            Console.WriteLine("Kangaroo is moving...");
         }
     }
 
