@@ -22,6 +22,8 @@ namespace _11_interfaces
         {
             Console.WriteLine(PrivateProperty);
             PrivateMethod();
+            ProtectedMethod();
+
             Console.WriteLine("Additional logic...");
         }
     }
