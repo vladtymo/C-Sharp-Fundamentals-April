@@ -6,8 +6,8 @@
         // str.Replace('#', '@'); // NullReferenceException
         // Unhandled exception -> app aborted 
 
-        ExceptionsExample();
-        FinallyExample();
+        //ExceptionsExample();
+        //FinallyExample();
         ThrowExample();
 
         Console.WriteLine("Continue........");
@@ -73,23 +73,23 @@
     }
     private static void ThrowExample()
     {
-        User user = new() { Name = "Vlad", Age = 44 };
+        User user = new() { Name = "Nazar", Age = 44 };
 
-        bool isValid = false;
-        do
-        {
-            try
-            {
-                Console.Write("Enter user name: ");
-                user.Name = Console.ReadLine();
-                isValid = true;
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+        //bool isValid = false;
+        //do
+        //{
+        //    try
+        //    {
+        //        Console.Write("Enter user name: ");
+        //        user.Name = Console.ReadLine();
+        //        isValid = true;
+        //    }
+        //    catch (ArgumentException ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
 
-        } while (!isValid);
+        //} while (!isValid);
 
         Console.WriteLine(user);
     }
@@ -125,6 +125,15 @@ public class User
 
     public override string ToString()
     {
+        //if (Age < 18) return "Young user";
+        //else return "Old user";
+        // using thernary operator
+        //return Age < 18 ? "Young user" : "Old user";
+
+        //if (Name == null) return "no name";
+        // using [??] null-condition operator
+        //Name ?? "no name"
+
         return $"User: {Name ?? "no name"} is {Age} years old";
     }
 }
