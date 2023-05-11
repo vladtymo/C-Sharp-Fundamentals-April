@@ -29,6 +29,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_system_interfaces", "12_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_interfaces_example", "13_interfaces_example\13_interfaces_example.csproj", "{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11_interface_topic", "11_interface_topic", "{E580E9EE-8F11-4EC6-992A-9867D0F8372B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_exceptions", "14_exceptions\14_exceptions.csproj", "{1F859A70-DB85-4FFE-A45E-5CEC8E9F3208}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,9 +91,18 @@ Global
 		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F859A70-DB85-4FFE-A45E-5CEC8E9F3208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F859A70-DB85-4FFE-A45E-5CEC8E9F3208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F859A70-DB85-4FFE-A45E-5CEC8E9F3208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F859A70-DB85-4FFE-A45E-5CEC8E9F3208}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBB77375-351B-47A9-8857-AC4302DDDA94} = {E580E9EE-8F11-4EC6-992A-9867D0F8372B}
+		{C7AF1390-EC45-47B9-B84D-3F95FF70D70C} = {E580E9EE-8F11-4EC6-992A-9867D0F8372B}
+		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD} = {E580E9EE-8F11-4EC6-992A-9867D0F8372B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {01683D1C-4350-44B1-B7EF-0E9C742FCB3D}
