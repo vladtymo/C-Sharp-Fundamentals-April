@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_multi_dimentions", "09_m
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10_classes", "10_classes\10_classes.csproj", "{7A6BA539-3365-48C4-8524-3195D21436ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_interfaces", "11_interfaces\11_interfaces.csproj", "{BBB77375-351B-47A9-8857-AC4302DDDA94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11_interfaces", "11_interfaces\11_interfaces.csproj", "{BBB77375-351B-47A9-8857-AC4302DDDA94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_system_interfaces", "12_system_interfaces\12_system_interfaces.csproj", "{C7AF1390-EC45-47B9-B84D-3F95FF70D70C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12_system_interfaces", "12_system_interfaces\12_system_interfaces.csproj", "{C7AF1390-EC45-47B9-B84D-3F95FF70D70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_interfaces_example", "13_interfaces_example\13_interfaces_example.csproj", "{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{C7AF1390-EC45-47B9-B84D-3F95FF70D70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7AF1390-EC45-47B9-B84D-3F95FF70D70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7AF1390-EC45-47B9-B84D-3F95FF70D70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FE0A91-C9D3-4725-AC0E-E05414092DBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
