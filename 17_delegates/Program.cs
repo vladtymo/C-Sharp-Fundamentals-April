@@ -76,6 +76,9 @@
             };
             double result = ariphmetic(10, 53);
             Console.WriteLine($"Result: {result}");
+
+            // Predicate<> - always return a boolean type
+            Predicate<int> check = IsTwoDigits;
         }
 
         static void Filter(int[] array, CheckValue check)
