@@ -10,7 +10,7 @@
     public enum DisplayType { OLED, IPS, LCD, LED, AMOLED };
 
     // base class - class which inherited by another class
-    class Device
+    abstract class Device
     {
         // [protected] - give an access in derived classes also
         protected bool isPowerOn;
@@ -36,10 +36,7 @@
         }
 
         // we can implement polymorphism by using [virtual] and [override] keywords
-        public virtual void DoWork()
-        {
-            Console.WriteLine("Do something...");
-        }
+        public abstract void DoWork();
 
         public void ShowInfo()
         {
@@ -88,7 +85,7 @@
             Console.WriteLine($"Printed pages: {TotalPages}");
         }
 
-        // [overrided] methods change the base method realisation
+        // [override] methods change the base method realisation
         public override void DoWork()
         {
             PrintDocument("test.rtf");
@@ -172,14 +169,15 @@
         static void Main(string[] args)
         {
             // -------------- Device
-            Device device = new Device("HP Pavillion", "GYT47582FB4J");
+            // ! we can not create an instance of an abstract class
+            //Device device = new Device("HP Pavillion", "GYT47582FB4J");
 
-            Console.WriteLine(device);
-            Console.WriteLine($"Status: {device.PowerStatus}");
-            device.SwitchPower();
-            Console.WriteLine($"Status: {device.PowerStatus}");
+            //Console.WriteLine(device);
+            //Console.WriteLine($"Status: {device.PowerStatus}");
+            //device.SwitchPower();
+            //Console.WriteLine($"Status: {device.PowerStatus}");
 
-            device.DoWork();
+            //device.DoWork();
 
             // -------------- Printer
             Printer printer = new Printer("Canon Pixma", "DF342MF", 5);
@@ -210,6 +208,8 @@
             // ------------------- Polymorphism -------------------
             Console.WriteLine("--------- Polymorphism ---------");
             Monitor officeMonitor = tv;
+
+            Device device = monitor;
 
             //officeMonitor.CurrentChannel = 10;
             officeMonitor.ShowInfo();
