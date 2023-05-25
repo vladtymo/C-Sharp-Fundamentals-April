@@ -1,6 +1,8 @@
 ﻿namespace _18_events
 {
     // --------------- Events
+    //public delegate void Reaction(int age);
+
     class Human
     {
         public string Name { get; set; }
