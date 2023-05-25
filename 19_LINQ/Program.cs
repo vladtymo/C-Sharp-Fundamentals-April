@@ -104,6 +104,7 @@ namespace _19_LINQ
 
             foreach (var g in groups)
             {
+                // g - contains group items
                 Console.WriteLine($"Group {g.Key}:");
                 foreach (var i in g)
                 {
