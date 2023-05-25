@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_file_system", "15_file_s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16_inheritance", "16_inheritance\16_inheritance.csproj", "{09E623BB-5A84-440F-879E-8F5EE0BD265A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_delegates", "17_delegates\17_delegates.csproj", "{6CCB8B7A-E1EB-47DA-A2D1-E81E4A0318CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_delegates", "17_delegates\17_delegates.csproj", "{6CCB8B7A-E1EB-47DA-A2D1-E81E4A0318CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_events", "18_events\18_events.csproj", "{F77D93D6-2B14-4DEC-9CE5-A96798E1B48E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18_events", "18_events\18_events.csproj", "{F77D93D6-2B14-4DEC-9CE5-A96798E1B48E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_LINQ", "19_LINQ\19_LINQ.csproj", "{70DC8CA3-C76A-4515-9EBE-35FB281722BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +121,10 @@ Global
 		{F77D93D6-2B14-4DEC-9CE5-A96798E1B48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F77D93D6-2B14-4DEC-9CE5-A96798E1B48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F77D93D6-2B14-4DEC-9CE5-A96798E1B48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DC8CA3-C76A-4515-9EBE-35FB281722BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DC8CA3-C76A-4515-9EBE-35FB281722BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DC8CA3-C76A-4515-9EBE-35FB281722BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DC8CA3-C76A-4515-9EBE-35FB281722BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
