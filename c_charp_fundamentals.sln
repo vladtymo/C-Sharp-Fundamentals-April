@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20_regex", "20_regex\20_reg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_relations", "21_relations\21_relations.csproj", "{3A087705-EEE1-4356-B57F-78301E465A22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_test_project", "22_test_project\22_test_project.csproj", "{57747C70-1735-44B9-8CAE-831B4557CBDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{3A087705-EEE1-4356-B57F-78301E465A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A087705-EEE1-4356-B57F-78301E465A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A087705-EEE1-4356-B57F-78301E465A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

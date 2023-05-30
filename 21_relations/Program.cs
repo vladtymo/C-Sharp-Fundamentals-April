@@ -2,7 +2,7 @@
 
 namespace _21_relations
 {
-    class Processor
+    public class Processor
     {
         public string Model { get; set; }
         public int Cores { get; set; }
@@ -13,7 +13,7 @@ namespace _21_relations
             return $"Processor {Model} has {Cores} cores, {Frequency}Ghz";
         }
     }
-    class Battery
+    public class Battery
     {
         public int Capacity { get; set; }
         public float Voltage { get; set; }
@@ -25,7 +25,7 @@ namespace _21_relations
     }
 
     public enum Type { IPS, OLED, AMOLED }
-    class Display
+    public class Display
     {
         public float Diagonal { get; set; }
         public Type Type { get; set; }
@@ -35,7 +35,7 @@ namespace _21_relations
             return $"{Type} display `{Diagonal} has {PixelDensity}ppi";
         }
     }
-    class Camera
+    public class Camera
     {
         public string Model { get; set; }
         public int Megapixels { get; set; }
@@ -47,7 +47,7 @@ namespace _21_relations
         }
     }
 
-    class SimCard
+    public class SimCard
     {
         public string Provider { get; set; }
         public string Number { get; set; }
@@ -58,7 +58,7 @@ namespace _21_relations
         }
     }
 
-    class SmartPhone
+    public class SmartPhone
     {
         public string Model { get; set; }
         public string Color { get; set; }
@@ -70,7 +70,7 @@ namespace _21_relations
         public Processor Processor { get; set; }
 
         // aggregation of the phone
-        public SimCard SIM { get; set; }
+        public SimCard? SIM { get; set; }
         public bool IsSimExists => SIM != null;
 
         public SmartPhone(string m, string c, int mp, int ppi, float f)
@@ -125,7 +125,7 @@ namespace _21_relations
             }
             SIM = sim;
         }
-        public SimCard EjectSIM()
+        public SimCard? EjectSIM()
         {
             var temp = SIM;
             SIM = null;
@@ -147,6 +147,7 @@ namespace _21_relations
             return $"Smart Phone: {Model} {Color}";
         }
     }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -159,6 +160,7 @@ namespace _21_relations
             smartPhone.MakeCall("+38097546264");
             smartPhone.TakePhoto();
 
+            // create SIM card instance
             SimCard card = new() { Number = "+38098080808", Provider = "Life" };
 
             smartPhone.InjectSIM(card);

@@ -2,7 +2,7 @@
 {
     enum Mode { Dry, Cool, Heat }
 
-    class Conditioner // : object - inheritance base object class by default
+    public class Conditioner // : object - inheritance base object class by default
     {
         // ------------- fields
         // object attributes
@@ -15,8 +15,8 @@
         private bool isPowerOn;
 
         // constants - can be initialized only
-        const int minT = 16;
-        const int maxT = 32;
+        public const int MIN_T = 16;
+        public const int MAX_T = 32;
         // readonly - can be initialized or set in the constructors
         readonly string serialNumber;
 
@@ -33,7 +33,7 @@
             set
             {
                 // value - input parameter
-                if (value >= minT && value <= maxT)
+                if (value >= MIN_T && value <= MAX_T)
                     this.temperature = value;
             }
         }
@@ -70,7 +70,7 @@
 
             this.model = model;
             this.color = color;
-            temperature = minT;
+            temperature = MIN_T;
             mode = Mode.Dry;
             isPowerOn = true;
             CreationDate = DateTime.Now;
@@ -82,7 +82,7 @@
         public void SetTemperature(int value)
         {
             // validation - check data correctness 
-            if (value >= minT && value <= maxT)
+            if (value >= MIN_T && value <= MAX_T)
                 this.temperature = value;
         }
         // getter method - to get object property value
@@ -97,12 +97,12 @@
         }
         public void Increase()
         {
-            if (temperature < maxT)
+            if (temperature < MAX_T)
                 ++temperature;
         }
         public void Decrease()
         {
-            if (temperature > minT)
+            if (temperature > MIN_T)
                 --temperature;
         }
 
