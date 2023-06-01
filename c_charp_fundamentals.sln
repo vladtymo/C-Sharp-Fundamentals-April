@@ -45,9 +45,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19_LINQ", "19_LINQ\19_LINQ.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20_regex", "20_regex\20_regex.csproj", "{EA651A3A-B133-4314-9E36-C872A0F0D725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_relations", "21_relations\21_relations.csproj", "{3A087705-EEE1-4356-B57F-78301E465A22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "21_relations", "21_relations\21_relations.csproj", "{3A087705-EEE1-4356-B57F-78301E465A22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_test_project", "22_test_project\22_test_project.csproj", "{57747C70-1735-44B9-8CAE-831B4557CBDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22_test_project", "22_test_project\22_test_project.csproj", "{57747C70-1735-44B9-8CAE-831B4557CBDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23_serialization", "23_serialization\23_serialization.csproj", "{EEF09AAB-7965-40A5-A095-F4C55655ADA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,10 @@ Global
 		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57747C70-1735-44B9-8CAE-831B4557CBDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF09AAB-7965-40A5-A095-F4C55655ADA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF09AAB-7965-40A5-A095-F4C55655ADA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF09AAB-7965-40A5-A095-F4C55655ADA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF09AAB-7965-40A5-A095-F4C55655ADA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
